@@ -2,7 +2,7 @@
  
    ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/DDL.jpg)
    
-   ### Conceptually, the data-parallel distributed training paradigm is straightforward:
+   ## Conceptually, the data-parallel distributed training paradigm is straightforward:
 
    1. Run multiple copies of the training script and each copy:
       1. Reads a chunk of the data
@@ -16,7 +16,7 @@
    1. Repeat (from Step 1.i)
    
    
-   ### Horovod, MPI, Keras/Tensorflow Distributed Architeture 
+   ## Horovod, MPI, Keras/Tensorflow Distributed Architeture 
    ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/MPI_Horovod1.jpeg)
    
    ## Code changes to support Horovod distributed training
@@ -98,7 +98,7 @@
    if hvd.rank() == 0:
        model.save('/workspace/unetmodelfdd.h5', include_optimizer=False)
    ```    
-   ### Performance comparison metrics between distributed vs non-distributed training
+   ## Performance comparison metrics between distributed vs non-distributed training
    
   ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/PM1.jpg)
   
