@@ -100,7 +100,7 @@
    ```    
    ### Performance comparison metrics between distributed vs non-distributed training
    
-  ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/MPI_Horovod1.jpeg)
+  ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/PM1.jpg)
   
-  ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/MPI_Horovod1.jpeg)
+  ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/PM2.jpg)
    
