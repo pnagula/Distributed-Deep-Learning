@@ -98,3 +98,9 @@
    if hvd.rank() == 0:
        model.save('/workspace/unetmodelfdd.h5', include_optimizer=False)
    ```    
+   ### Performance comparison metrics between distributed vs non-distributed training
+   
+  ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/MPI_Horovod1.jpeg)
+  
+  ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/MPI_Horovod1.jpeg)
+   
