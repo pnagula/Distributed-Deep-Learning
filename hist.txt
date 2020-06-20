@@ -1,0 +1,500 @@
+   84  cat 2007_train.txt 
+   85  clear
+   86  ls -lrth
+   87  cd
+   88  clear
+   89  cd Downloads/
+   90  cd keras-yolo3/
+   91  cd ..
+   92  clear
+   93  cd yolov1-keras-voc/
+   94  clear
+   95  ls -lrth
+   96  jupyter notebook
+   97  ls -lrth
+   98  docker cp np_xtrain_448.npy pg-madlib:/tmp/
+   99  docker cp np_ytrain_448.npy pg-madlib:/tmp/
+  100  docker exec -it pg-madlib
+  101  docker exec -it pg-madlib /bin/basj
+  102  docker exec -it pg-madlib /bin/bash
+  103  exit
+  104  cd Downloads/
+  105  clear
+  106  docker start pg-madlib
+  107  clear
+  108  clear
+  109  docker start pg-madlib
+  110  clear
+  111  docker ps -a
+  112  docker start pg-madlib
+  113  clear
+  114  cd yolov1-keras-voc/
+  115  ls -lrth
+  116  jupyter notebook
+  117  docker start pg-madlib
+  118  clear
+  119  docker ps -a
+  120  clear
+  121  docker stop pg-madlib
+  122  clear
+  123  exit
+  124  cd Downloads/
+  125  cd yolov1-keras-voc/
+  126  ls -lrth
+  127  jupyter notebook
+  128  clear
+  129  exit
+  130  clear
+  131  cd Downloads/
+  132  ls -lrth
+  133  cd yolov1-keras-voc/
+  134  ls -lrth
+  135  jupyter notebook
+  136  jupyter notebook
+  137  clear
+  138  exit
+  139  docker stop pg-madlib
+  140  exit
+  141  cd Downloads/
+  142  cd yolov1-keras-voc/
+  143  clear
+  144  jupyter notebook
+  145  docker start pg-madlib
+  146  docker ps -0a
+  147  docker ps -a
+  148  clear
+  149  docker ps -a
+  150  docker exec -it pg-madlib /bin/bash
+  151  docker stop pg-madlib
+  152  exit
+  153  cd ..
+  154  ls -lrth
+  155  cd OIDv4_ToolKit/
+  156  ls -lrth
+  157  clear
+  158  cd
+  159  cd Downloads/
+  160  ls -lrth
+  161  https://github.com/qqwweee/keras-yolo3
+  162  rm -rf keras-yolo3/
+  163  https://github.com/qqwweee/keras-yolo3
+  164  git clone https://github.com/qqwweee/keras-yolo3
+  165  clear
+  166  cd keras-yolo3/
+  167  ls -lrth
+  168  cd ..
+  169  cd ..
+  170  cd keras-yolo3/
+  171  ls -lrh
+  172  cd ..
+  173  ls -lrth
+  174  cd OIDv4_ToolKit/
+  175  ls -lrth
+  176  cat 4_CLASS_test.txt 
+  177  ls 4_CLASS_test.txt | wc -l
+  178  cat 4_CLASS_test.txt | wc -l
+  179  cd /Users/pnagula/OIDv4_ToolKit/./OID/Dataset/train/Bus/
+  180  ls
+  181  ls -lrth
+  182  pwd
+  183  cd 
+  184  find . -name 'yolov3.weights'
+  185  find . -name 'yolo_weights.h5'
+  186  cd Downloads/
+  187  cd keras-yolo3/
+  188  python convert.py -w yolov3.cfg /users/pnagula/Downloads/yolov3.weights model_data/yolo_weights.h5
+  189  cd model_data/
+  190  ls
+  191  cat voc_classes.txt 
+  192  cat yolo_anchors.txt 
+  193  cd
+  194  pwd
+  195  cd OIDv4_ToolKit/
+  196  ls -lrth
+  197  pwd
+  198  cd
+  199  cd keras-yolo3/
+  200  ls -lrth
+  201  cd ..
+  202  ls -lrth
+  203  cd OIDv4_ToolKit/
+  204  ls -lrth
+  205  cd ..
+  206  cd Downloads/
+  207  ls -lrth
+  208  cd keras-yolo3/
+  209  ls
+  210  ls -lrth
+  211  cd model_data/
+  212  ls
+  213  cat yolo_anchors.txt 
+  214  cd Downloads/
+  215  clear
+  216  cd keras-yolo3/
+  217  ls -lrth
+  218  cd ..
+  219  cd yolov1-keras-voc/
+  220  ls -lrth
+  221  cp experincor_yolo_v3.ipynb /users/pnagula/Downloads/keras-yolo3/
+  222  ls -lrth
+  223  cd ..
+  224  jupyter notebook
+  225  /Users/pnagula/anaconda3/bin/spyder ; exit;
+  226  ls -lrth
+  227  cd Downloads/
+  228  ls -lrth
+  229  cd keras-yolo3/
+  230  ls -lrth
+  231  docker start pg-madlib
+  232  docker cp np_xtrain_416.npy pg-madlib:/tmp/
+  233  docker cp np_ytrain_13.npy pg-madlib:/tmp/
+  234  docker cp np_ytrain_26.npy pg-madlib:/tmp/
+  235  docker cp np_ytrain_52.npy pg-madlib:/tmp/
+  236  docker exec -it pg-madlib /bin/basg
+  237  docker exec -it pg-madlib /bin/bash
+  238  exit
+  239  ls -lrth
+  240  cd Downloads/
+  241  ls -lrth
+  242  cd ..
+  243  clear
+  244  jupyter notebook
+  245  clear
+  246  exit
+  247  jupyter notebook
+  248  docker start pg-madlib
+  249  docker ps -a
+  250  docker stop pg-madlib
+  251  clear
+  252  docker ps -a
+  253  clear
+  254  exit
+  255  docker images -a
+  256  docker exec -it pg-madlib /bin/bash
+  257  docker start pg-madlib
+  258  docker exec -it pg-madlib /bin/bash
+  259  docker stop pg-madlib
+  260  clear
+  261  docker images -a
+  262  docker save pg-madlib-image:latest | gzip > pg-madlib-image.tar.gz 
+  263  ls -lrth
+  264  mv pg-madlib-image.tar.gz ./Downloads/
+  265  clear
+  266  exit
+  267  docker images -a
+  268  clear
+  269  docker images -a
+  270  jupyter notebook
+  271  docker start pg-madlib
+  272  clear
+  273  docker ps -a
+  274  clear
+  275  docker exec -it pg-madlib
+  276  docker exec -it pg-madlib /bin/bash
+  277  clear
+  278  docker stop pg-madlib
+  279  clear
+  280  docker ps -a
+  281  exit
+  282  jupyter notebook
+  283  jupyter notebook
+  284  docker ps -a
+  285  docker exec -it pg-madlib /bin/bash
+  286  exit
+  287  docker start pg-madlib
+  288  clear
+  289  docker ps -a
+  290  clear
+  291  docker stop pg-madlib
+  292  clear
+  293  docker start pg-madlib
+  294  clear
+  295  jupyter notebook
+  296  cd Downloads/
+  297  ssh -i ./mdw-key-jamwab jamwab@35.211.124.110
+  298  clear
+  299  cd ..
+  300  jupyter notebook
+  301  clear
+  302  jupyter notebook
+  303  clear
+  304  clear
+  305  jupyter notebooj
+  306  jupyter notebook
+  307  clear
+  308  exir
+  309  exit
+  310  cd Downloads/
+  311  clear
+  312  ssh -i /Users/bjamwal/Desktop/mdw-key-jamwab jamwab@35.211.124.110
+  313  ssh -i ./mdw-key-jamwab jamwab@35.211.124.110
+  314  clear
+  315  pwd
+  316  ssh -i ./mdw-key-jamwab jamwab@35.211.124.110
+  317  ls -lrth
+  318  docker ps -a
+  319  docker start pg-madlib
+  320  clear
+  321  docker ps -a
+  322  docker exec -it pg-madlib /bin/bash
+  323  docker cp  pg-madlib:/tmp/Image_Load.py ./Image_Load.py
+  324  ls -lrth
+  325  cat Image_Load.py 
+  326  docker exec -it pg-madlib /bin/bash
+  327  docker cp  pg-madlib:/tmp/Image_Load.py ./Image_Load.py
+  328  cat Image_Load.py 
+  329  clear
+  330  docker stop pg-madlib
+  331  docker ps -a
+  332  clear
+  333  docker ps -a
+  334  exit
+  335  clear
+  336  docker pull vdevaram/hvd_tf_unet:1.0
+  337  docker images 0a
+  338  docker images -a
+  339  docker save vdevaram/hvd_tf_unet:1.0 | gzip > hvd_tf_unet.tar.gz
+  340  ls -lrth
+  341  clear
+  342  ls -lrth
+  343  mv hvd_tf_unet.tar.gz ./Downloads/
+  344  ping 192.168.116.103
+  345  ssh pavan@192.168.116.103
+  346  ssh pavan@192.168.116.103
+  347  ssh pavan@192.168.116.103
+  348  ssh pavan@192.168.116.104
+  349  exit
+  350  clear
+  351  cd Downloads/
+  352  cd Usecases_Code/
+  353  cd Image_Segmentation/
+  354  ls -lrth
+  355  find . -name '*.npy'
+  356  scp ./training_512/*.npy pavan@192.168.116.103:/pavan/
+  357  ssh pavan@192.168.116.103
+  358  scp ./training_512/*.npy pavan@192.168.116.103:/home/pavan/
+  359  clear
+  360  ssh pavan@192.168.116.103
+  361  ls -lrth
+  362  scp UnetImgseg_Horovod.py pavan@192.168.116.103:/home/pavan/
+  363  scp data.py pavan@192.168.116.103:/home/pavan/
+  364  clear
+  365  ssh pavan@192.168.116.103
+  366  ssh pavan@192.168.116.103
+  367  ssh pavan@192.168.116.104
+  368  ssh pavan@192.168.116.104
+  369  ssh pavan@192.168.116.103
+  370  ssh pavan@192.168.116.103
+  371  ssh pavan@192.168.113.104
+  372  ssh pavan@192.168.116.104
+  373  ssh pavan@192.168.116.103
+  374  exit
+  375  ssh pavan@192.168.116.104
+  376  ssh pavan@192.168.116.103
+  377  ssh pavan@192.168.116.103
+  378  ssh pavan@192.168.116.104
+  379  pwd
+  380  ssh pavan@192.168.116.103
+  381  ssh pavan@192.168.116.103
+  382  clear
+  383  exit
+  384  ssh pavan@192.168.116.103
+  385  clear
+  386  ssh pavan@192.168.116.103
+  387  exit
+  388  ssh pavan@192.168.116.103
+  389  clear
+  390  exit
+  391  ls -lrth
+  392  cd Downloads/
+  393  ls -lrth
+  394  cat dockerfile_openvino 
+  395  docker build -t openvino:latest -f dockerfile_openvino .
+  396  cd Usecases_Code/
+  397  mkdir OpenVino
+  398  cd ..
+  399  mv dockerfile_openvino ./Usecases_Code/OpenVino/
+  400  mv requirements.pip3 ./Usecases_Code/OpenVino/
+  401  cd Usecases_Code/OpenVino/
+  402  clear
+  403  docker build -t openvino:latest -f dockerfile_openvino .
+  404  clear
+  405  docker pull openvino/ubuntu18_base_cpu
+  406  docker system prune
+  407  clear
+  408  docker images -a
+  409  docker run -it openvino/ubuntu18_base_cpu:latest
+  410  clear
+  411  alias dfimage="docker run -v /var/run/docker.sock:/var/run/docker.sock --rm openvino/ubuntu18_base_cpu"
+  412  dfimage
+  413  dfimage --help
+  414  dfimage openvino/ubuntu18_base_cpu
+  415  alias dfimage="docker run -v /var/run/docker.sock:/var/run/docker.sock --rm openvino/ubuntu18_base_cpu"
+  416  dfimage openvino/ubuntu18_base_cpu
+  417  dfimage openvino/ubuntu18_base_cpu:latest
+  418  alias dfimage="docker run -v /var/run/docker.sock:/var/run/docker.sock --rm openvino/ubuntu18_base_cpu:latest"
+  419  dfimage openvino/ubuntu18_base_cpu:latest
+  420  docker images -a
+  421  alias dfimage="docker run -v /var/run/docker.sock:/var/run/docker.sock --rm openvino/ubuntu18_base_cpu:latest"
+  422  dfimage openvino/ubuntu18_base_cpu:latest
+  423  clear
+  424  docker run -it openvino/ubuntu18_base_cpu:latest
+  425  clear
+  426  ls -lrth
+  427  vim dockerfile_openvino 
+  428  vim dockerfile_openvino 
+  429  docker build -t openvino:latest -f dockerfile_openvino .
+  430  ls -lrth
+  431  cd Downloads/
+  432  ls -lrth
+  433  clear
+  434  mv l_openvino_toolkit_p_2020.2.120.tgz ./Usecases_Code/OpenVino/
+  435  cd Usecases_Code/OpenVino/
+  436  clear
+  437  ls -lrth
+  438  docker build -t openvino:latest -f dockerfile_openvino .
+  439  docker build -t openvino:latest -f dockerfile_openvino .
+  440  clear
+  441  docker build -t openvino:latest -f dockerfile_openvino .
+  442  docker build -t openvino:latest -f dockerfile_openvino .
+  443  docker build -t openvino:latest -f dockerfile_openvino .
+  444  vi requirements.pip3 
+  445  docker build -t openvino:latest -f dockerfile_openvino .
+  446  docker build -t openvino:latest -f dockerfile_openvino .
+  447  docker run -it openvino:latest
+  448  docker build -t openvino:latest -f dockerfile_openvino .
+  449  docker run -it openvino:latest
+  450  clear
+  451  docker build -t openvino:latest -f dockerfile_openvino .
+  452  docker run -it openvino:latest
+  453  exit
+  454  ssh pavan@192.168.116.103
+  455  clear
+  456  htop
+  457  top
+  458  ftop
+  459  htop
+  460  ssh pavan@192.168.116.103
+  461  ssh pavan@192.168.116.104
+  462  ssh pavan@192.168.116.103
+  463  clear
+  464  exit
+  465  cd Downloads/
+  466  cd Usecases_Code/
+  467  cd OpenVino/
+  468  clear
+  469  docker build -t openvino:latest -f dockerfile_openvino .
+  470  docker run -it openvino:latest
+  471  ls -lrth
+  472  vim dockerfile_openvino 
+  473  vim dockerfile_openvino 
+  474  docker build -t openvino:latest -f dockerfile_openvino .
+  475  pip install intel-tensorflow
+  476  pip uninstall intel-tensorflow
+  477  vim requirements.pip3 
+  478  docker build -t openvino:latest -f dockerfile_openvino .
+  479  docker build -t openvino:latest -f dockerfile_openvino .
+  480  vim requirements.pip3 
+  481  docker build -t openvino:latest -f dockerfile_openvino .
+  482  docker run -it openvino:latest
+  483  vim requirements.pip3 
+  484  docker run -it openvino:latest
+  485  vim requirements.pip3 
+  486  docker run -it openvino:latest
+  487  clear
+  488  vim requirements.pip3 
+  489  docker build -t openvino:latest -f dockerfile_openvino .
+  490  docker build -t openvino:latest -f dockerfile_openvino .
+  491  clear
+  492  docker build -t openvino:latest -f dockerfile_openvino .
+  493  docker run -it openvino:latest
+  494  clear
+  495  docker run -it openvino:latest
+  496  clear
+  497  exit
+  498  clear
+  499  ssh pavan@192.168.116.1023
+  500  ssh pavan@192.168.116.103
+  501  ssh pavan@192.168.116.103
+  502  clear
+  503  ls -lrth
+  504  cd Downloads/
+  505  clear
+  506  cd ..
+  507  ls -lrth
+  508  jupyter notebook  
+  509  clear
+  510  cd Downloads/
+  511  ls -lrth
+  512  pwd
+  513  docker run -it -v /users/pnagula/Downloads/:/tmp/ openvino:latest /bin/bash 'python /tmp/openvino_inference.py'
+  514  docker run -v /users/pnagula/Downloads/:/tmp/ openvino:latest /bin/bash 'python /tmp/openvino_inference.py'
+  515  pwd
+  516  docker run -v /Users/pnagula/Downloads/:/tmp/ openvino:latest /bin/bash 'python /tmp/openvino_inference.py'
+  517  docker run -v /users/pnagula/Downloads/:/tmp/ openvino:latest /bin/bash -c 'python /tmp/openvino_inference.py'
+  518  docker run -v /Users/pnagula/Downloads/:/tmp/ openvino:latest -it  /bin/bash -c 'python /tmp/openvino_inference.py'
+  519  docker run -it -v /Users/pnagula/Downloads/:/tmp/ openvino:latest   /bin/bash -c 'python /tmp/openvino_inference.py'
+  520  vi openvino_inference.py 
+  521  docker run -it -v /Users/pnagula/Downloads/:/tmp/ openvino:latest   /bin/bash -c 'python /tmp/openvino_inference.py'
+  522  pip install openvino
+  523  c;ear
+  524  clear
+  525  docker run -it -v /Users/pnagula/Downloads/:/tmp/ openvino:latest   
+  526  docker run -it -v /Users/pnagula/Downloads/:/tmp/ openvino:latest   
+  527  vi openvino_inference.py 
+  528  docker run -it -v /Users/pnagula/Downloads/:/tmp/ openvino:latest   /bin/bash -c 'python /tmp/openvino_inference.py'
+  529  vi openvino_inference.py 
+  530  vi sourceopenvino.sh
+  531  ls -lrth
+  532  vi sourceopenvino.sh
+  533  vi openvino_inference.py 
+  534  vi openvino_inference.py 
+  535  docker run -it -v /Users/pnagula/Downloads/:/tmp/ openvino:latest   /bin/bash -c 'python /tmp/openvino_inference.py'
+  536  cat sourceopenvino.sh 
+  537  cd Usecases_Code/
+  538  ls
+  539  cd OpenVino/
+  540  ls
+  541  cat dockerfile_openvino 
+  542  cd
+  543  cd Downloads/
+  544  ls -lrth
+  545  cat sourceopenvino.sh 
+  546  cd Usecases_Code/OpenVino/
+  547  cat dockerfile_openvino 
+  548  docker run -it -v /Users/pnagula/Downloads/:/tmp/ openvino:latest   
+  549  vi dockerfile_openvino 
+  550  docker build -t openvino:latest -f dockerfile_openvino .
+  551  vi dockerfile_openvino 
+  552  docker build -t openvino:latest -f dockerfile_openvino .
+  553  vi dockerfile_openvino 
+  554  vi dockerfile_openvino 
+  555  docker build -t openvino:latest -f dockerfile_openvino .
+  556  vi requirements.pip3 
+  557  docker build -t openvino:latest -f dockerfile_openvino .
+  558  vi requirements.pip3 
+  559  vi dockerfile_openvino 
+  560  docker build -t openvino:latest -f dockerfile_openvino .
+  561  docker run -it -v /Users/pnagula/Downloads/:/tmp/ openvino:latest   
+  562  clear
+  563  docker system prune
+  564  vi dockerfile_openvino 
+  565  clear
+  566  docker images -a
+  567  clear
+  568  docker images -a
+  569  clear
+  570  cat dockerfile_openvino 
+  571  clear
+  572  cd ..
+  573  cd Speech_To_Text\ Demo/
+  574  ls
+  575  cat dockerfilep3 
+  576  cd ..
+  577  cd OpenVino/
+  578  clear
+  579  vim dockerfile_openvino 
+  580  docker build -t openvino:latest -f dockerfile_openvino .
+  581  vim dockerfile_openvino 
+  582  docker build -t openvino:latest -f dockerfile_openvino .
+  583  history > hist.txt

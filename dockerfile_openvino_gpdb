@@ -1,0 +1,49 @@
+FROM pivotaldata/plcontainer_python3_shared:devel
+USER root
+WORKDIR /
+RUN useradd -ms /bin/bash openvino && \
+    chown openvino -R /home/openvino
+
+ARG DEPENDENCIES="autoconf \
+                  automake \
+                  build-essential \
+                  cmake \
+                  cpio \
+                  curl \
+                  gnupg2 \
+                  libdrm2 \
+                  libglib2.0-0 \
+                  lsb-release \
+                  libgtk-3-0 \
+                  libtool \
+                  python3-pip \
+                  udev \
+                  unzip"
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends ${DEPENDENCIES} vim && \
+    rm -rf /var/lib/apt/lists/*
+WORKDIR /tmp
+COPY ./l_openvino_toolkit_p_2020.2.120.tgz ./
+
+### install OpenVino
+ARG INSTALL_DIR=/opt/intel/openvino
+RUN tar -xzf ./*.tgz && \
+    cd l_openvino_toolkit* && \
+    sed -i 's/decline/accept/g' silent.cfg && \
+    ./install.sh -s silent.cfg && \
+    rm -rf /tmp/* && \
+    $INSTALL_DIR/install_dependencies/install_openvino_dependencies.sh
+ENV INSTALLDIR /opt/intel/openvino
+
+# install intel-tensorflow 1.14.0
+RUN pip3 install https://storage.googleapis.com/intel-optimized-tensorflow/intel_tensorflow-1.14.0-cp37-cp37m-manylinux1_x86_64.whl
+
+ADD requirements.pip3 /tmp/
+
+RUN pip3 install -r /tmp/requirements.pip3
+
+RUN apt-get install -y vim
+
+WORKDIR /
+
+RUN echo "source /opt/intel/openvino/bin/setupvars.sh" >> ~/.bashrc
