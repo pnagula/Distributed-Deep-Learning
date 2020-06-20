@@ -104,3 +104,12 @@
   
   ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/PM2.jpg)
    
+  ## How to Start Training
+  * Run following command on worker nodes first
+      * docker run --name slave_node -v   <storage_path>/pivotal:/workspace  -v /root/.ssh:/root/.ssh  --network=host  --privileged --rm  hvd_tf_unet:1.0 /bin/bash -c "/usr/sbin/sshd -p 12345; sleep infinity"
+  * Run following command on master node
+      
+      * Keep the below command in a shell script – run_unet.sh
+         * HOROVOD_FUSION_THRESHOLD=134217728 mpirun -np 4 --map-by node:pe=8 --allow-run-as-root --mca plm_rsh_args "-p 12345" -mca btl_tcp_if_include <interface> -mca btl ^openib -mca pml ob1 -H <master_op>:9999, <slave_2_ip>:9999, <slave_3_ip>:9999, <slave_4_ip>:9999   --oversubscribe --report-bindings -x LD_LIBRARY_PATH -x HOROVOD_FUSION_THRESHOLD -x OMP_NUM_THREADS=7 -x KMP_BLOCKTIME=1  -x KMP_AFFINITY=granularity=fine,verbose,compact,1,0 python3 -u   /workspace/unet/UnetImgseg_Horovod.py  
+      
+      * docker run --name master_node -v /<storage_path>pivotal:/workspace -v /root/.ssh:/root/.ssh --network=host  --privileged --rm  hvd_tf_unet:1.0 /bin/bash -c "source /workspace/run_unet.sh"
