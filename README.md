@@ -32,4 +32,10 @@
        end_index= start_index + number_of_examples_per_rank 
     print('Rank''s, Start and End Index:',hvd.rank(),start_index,end_index)
 
-   * Here, number_of examples per rank 
+   * start_index and end_index contains start and end index of images in training numpy array for each worker node.
+      * e.g:- Let's say imgs_train.shape[0] = 5000 and worker nodes=10, 
+         * worker node 1 , start_index=0, end_index=499
+         * worker node 2 , start_index=500, end_index=999
+         * worker node 10, start_index=4500, end_index=4999
+         
+              
