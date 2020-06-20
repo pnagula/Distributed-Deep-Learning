@@ -2,7 +2,7 @@
  
    ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/DDL.jpg)
    
-   1. Conceptually, the data-parallel distributed training paradigm is straightforward:
+   ### Conceptually, the data-parallel distributed training paradigm is straightforward:
 
    1. Run multiple copies of the training script and each copy:
       1. Reads a chunk of the data
