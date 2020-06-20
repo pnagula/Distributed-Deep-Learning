@@ -37,5 +37,11 @@
          * worker node 1 , start_index=0, end_index=499
          * worker node 2 , start_index=500, end_index=999
          * worker node 10, start_index=4500, end_index=4999
-         
-              
+   ### Keras fit method changes for distributed training
+   ```python 
+   model.fit(imgs_train[start_index:end_index], imgs_mask_train[start_index:end_index], batch_size=12,              
+              epochs=resume_from_epoch+10,  shuffle=True, 
+              validation_split=0.01,initial_epoch=resume_from_epoch, 
+              callbacks=callbacks, 
+              verbose=1 if hvd.rank() == 0 else 0)
+   ```        
