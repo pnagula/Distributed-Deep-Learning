@@ -17,7 +17,7 @@
    
    
    ### Horovod, MPI, Keras/Tensorflow Distributed Architeture 
-   ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/MPI_Horovod.jpeg)
+   ![](https://github.com/pnagula/Distributed-Deep-Learning/blob/master/MPI_Horovod1.jpeg)
    
    ### Data Distribution to each worker node
 
