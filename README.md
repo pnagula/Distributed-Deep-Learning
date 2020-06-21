@@ -140,6 +140,9 @@ MPP (also known as a shared nothing architecture) refers to systems with two or 
 * Build docker image 
    * docker build -t openvino_gpdb:laest -f dockerfile_openvino_gpdb .
 ## One time run of OpenVINO tensorflow Model optimization module
-
-   
+* Run program openvino_modeloptimize.py to optimize tensorflow model
+   *  python openvino_modeloptimize.py '/Users/pnagula/Downloads/Usecases_Code/Image_Segmentation/nddcheckpoint-46.h5'
+* The program openvino_modeloptimize.py creates optimized model in xml and bin files 
+## Predict/Score in parallel using OpenVINO optimized model and Greenplum
+* create function *img_inference* using file openvino_ie.sql
    
