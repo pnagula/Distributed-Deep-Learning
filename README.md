@@ -120,3 +120,11 @@
       * docker run --name master_node -v /<storage_path>pivotal:/workspace -v /root/.ssh:/root/.ssh --network=host  --privileged --rm  hvd_tf_unet:1.0 /bin/bash -c "source /workspace/run_unet.sh"
 
 # Distributed Inference using OpenVINO and Greenplum
+OpenVINO™ toolkit quickly deploys applications and solutions that emulate human vision. Based on Convolutional Neural Networks (CNNs), the toolkit extends computer vision (CV) workloads across Intel® hardware, maximizing performance. The OpenVINO™ toolkit includes the Deep Learning Deployment Toolkit (DLDT).
+
+OpenVINO™ toolkit:
+
+* Enables CNN-based deep learning inference on the edge
+* Supports heterogeneous execution across an Intel® CPU, Intel® Integrated Graphics, Intel® FPGA, Intel® Movidius™ Neural Compute Stick, Intel® Neural Compute Stick 2 and Intel® Vision Accelerator Design with Intel® Movidius™ VPUs
+* Speeds time-to-market via an easy-to-use library of computer vision functions and pre-optimized kernels
+* Includes optimized calls for computer vision standards, including OpenCV* and OpenCL
