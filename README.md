@@ -135,3 +135,7 @@ OpenVINO™ toolkit:
 Greenplum Database is a massively parallel processing (MPP) database server with an architecture specially designed to manage large-scale analytic data warehouses and business intelligence workloads.
 
 MPP (also known as a shared nothing architecture) refers to systems with two or more processors that cooperate to carry out an operation, each processor with its own memory, operating system and disks. Greenplum uses this high-performance system architecture to distribute the load of multi-terabyte data warehouses, and can use all of a system's resources in parallel to process a query.
+
+## Build OpenVINO Docker image
+* Build docker image 
+   * docker build -t openvino_gpdb:laest -f .
