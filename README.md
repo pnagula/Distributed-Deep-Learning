@@ -144,5 +144,7 @@ MPP (also known as a shared nothing architecture) refers to systems with two or 
    *  python openvino_modeloptimize.py '/Users/pnagula/Downloads/Usecases_Code/Image_Segmentation/nddcheckpoint-46.h5'
 * The program openvino_modeloptimize.py creates optimized model in xml and bin files 
 ## Predict/Score in parallel using OpenVINO optimized model and Greenplum
-* create function *img_inference* using file openvino_ie.sql
-   
+* Create function *img_inference* using file openvino_ie.sql
+* Score the image using following SQL 
+   * select img_inference(filename) from openvino_input; -- filename is path to image stored in table openvino_input
+
