@@ -7,10 +7,11 @@ from openvino.inference_engine import IENetwork, IEPlugin
 import numpy as np
 from skimage.transform import resize
 from skimage.io import imread,imsave
- 
+import sys
+
 # load the intel optimized model for inference
-model_xml = '/workspace/frozen_model.xml'
-model_bin = '/workspace/frozen_model.bin'
+model_xml = sys.argv[1]
+model_bin = sys.argv[2]
 plugin = IEPlugin("CPU", plugin_dirs=None)
 
 # Build Inference Engine network using xml and bin files
