@@ -23,7 +23,7 @@ def dice_coef_loss(y_true, y_pred):
 tf.keras.backend.clear_session()
 
 save_pb_dir = '/Users/pnagula/Downloads/'
-model_fname = '/Users/pnagula/Downloads/Usecases_Code/Image_Segmentation/nddcheckpoint-46.h5'
+model_fname = sys.argv[1]
 def freeze_graph(graph, session, output, save_pb_dir='.', save_pb_name='frozen_model.pb', save_pb_as_text=False):
     with graph.as_default():
         graphdef_inf = tf.graph_util.remove_training_nodes(graph.as_graph_def())
